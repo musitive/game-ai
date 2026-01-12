@@ -7,7 +7,7 @@ void Rigidbody2D::update(const SteeringOutput& steering, float time) {
     orientation += angular * time; // + steering.angularVelocity * halfTSq;
 
     linear += steering.linear * time;
-    angular += steering.angular * time;
+    angular += steering.rotation * time;
 }
 
     /*
@@ -21,5 +21,5 @@ void Rigidbody2D::update(const SteeringOutput& steering, float time) {
 8 else:
 9 return current */
 float newOrientation(float current, const ofVec2f& velocity) {
-    return 0;
+    return velocity.length() ? atan2f(-static.x, static.z) : orientation;
 }

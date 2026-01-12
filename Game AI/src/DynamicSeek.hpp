@@ -1,3 +1,6 @@
+#ifndef DYNAMIC_SEEK
+#define DYNAMIC_SEEK
+
 #include "ofMain.h"
 #include "Rigidbody2D.hpp"
 #include "SteeringOutput.hpp"
@@ -18,3 +21,5 @@ struct DynamicSeek {
         const Rigidbody2D& character,
         const Rigidbody2D& target) const;
 };
+
+#endif //DYNAMIC_SEEK

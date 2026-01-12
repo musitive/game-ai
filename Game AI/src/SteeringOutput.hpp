@@ -5,5 +5,5 @@ struct SteeringOutput {
     ofVec2f linear;
 
     /** TODO: Review what this is and how to implement it */
-    float angular;
+    float rotation;
 };

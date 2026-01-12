@@ -1,3 +1,6 @@
+#ifndef RIGIDBODY_2D
+#define RIGIDBODY_2D
+
 #include "ofMain.h"
 #include "SteeringOutput.hpp"
 #include "Static.hpp"
@@ -21,8 +24,4 @@ struct Rigidbody2D {
     void update(const SteeringOutput& steering, float time);
 };
 
-/// @brief 
-/// @param current 
-/// @param velocity 
-/// @return 
-float newOrientation(float current, const ofVec2f& velocity);
+#endif //RIGIDBODY_2D
