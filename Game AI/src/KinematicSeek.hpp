@@ -9,6 +9,7 @@ struct KinematicSeek {
     Static target;
     float maxSpeed;
 
+    /** He made this virt */
     SteeringOutput getSteering();
 };
 
