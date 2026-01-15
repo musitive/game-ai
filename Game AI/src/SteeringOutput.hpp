@@ -1,3 +1,6 @@
+#ifndef STEERING_OUTPUT
+#define STEERING_OUTPUT
+
 #include "ofMain.h"
 
 struct SteeringOutput {
@@ -7,3 +10,5 @@ struct SteeringOutput {
     /** TODO: Review what this is and how to implement it */
     float rotation;
 };
+
+#endif // STEERING_OUTPUT

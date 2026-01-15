@@ -1,139 +1,72 @@
 {
 	"configurations": [
 		{
-			"browse": {
-				"databaseFilename": "${workspaceRoot}/.vscode/browse.db",
-				"limitSymbolsToIncludedHeaders": true,
-				"path": [
-					"/usr/local/include",
-					"/System/Library/Frameworks",
-					"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
-					"${workspaceFolder}/src/**",
-					"${OF_INCLUDE}",
-					"${OF_LIBS_INCLUDE}",
-					"${PROJECT_ADDON_INCLUDES}",
-					"${PROJECT_EXTRA_INCLUDES}"
-				]
-			},
-			"cStandard": "c17",
+			"name": "Mac",
 			"compilerPath": "/usr/bin/gcc",
-			"configurationProvider": "ms-vscode.makefile-tools",
+			"cStandard": "c17",
 			"cppStandard": "c++17",
-			"includePath": [
-				"/usr/local/include",
-				"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/",
-				"${OF_INCLUDE}",
-				"${OF_LIBS_INCLUDE}",
-				"${workspaceFolder}/src/**",
-				"${PROJECT_ADDON_INCLUDES}",
-				"${PROJECT_EXTRA_INCLUDES}"
-			],
-			"intelliSenseMode": "${default}",
+			"intelliSenseMode": "clang-x64",
+			"configurationProvider": "ms-vscode.makefile-tools",
+			"mergeConfigurations": true,
 			"macFrameworkPath": [
 				"/System/Library/Frameworks",
 				"/Library/Frameworks"
 			],
-			"mergeConfigurations": true,
-			"name": "Mac"
-		},
-		{
+			"includePath": [
+				"${workspaceFolder}/src",
+				"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/openFrameworks/**",
+				"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/**/include/**",
+				"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/**/include"
+			],
 			"browse": {
-				"databaseFilename": "",
+				"databaseFilename": "${workspaceRoot}/.vscode/browse.db",
 				"limitSymbolsToIncludedHeaders": true,
 				"path": [
-					"/usr/local/include",
-					"/usr/include",
-					"${workspaceFolder}/src/**",
-					"${OF_INCLUDE}",
-					"${OF_LIBS_INCLUDE}",
-					"${PROJECT_ADDON_INCLUDES}",
-					"${PROJECT_EXTRA_INCLUDES}"
+					"${workspaceFolder}/src",
+					"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/openFrameworks/**",
+					"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/**/include/**",
+					"/Users/dallinfrank/Documents/of_v0.12.1_osx_release/libs/**/include"
 				]
-			},
-			"cStandard": "c17",
+			}
+		},
+		{
+			"name": "Linux",
 			"compilerPath": "/usr/bin/gcc",
-			"configurationProvider": "ms-vscode.makefile-tools",
+			"cStandard": "c17",
 			"cppStandard": "c++17",
-			"includePath": [
-				"/usr/include",
-				"/usr/local/include",
-				"/usr/include/c++/*",
-				"/usr/lib/gcc/x86_64-linux-gnu/*",
-				"/usr/lib/x86_64-linux-gnu/glib-2.0/include",
-				"/usr/lib/x86_64-linux-gnu/gstreamer-1.0/include",
-				"/usr/local/include",
-				"/usr/include/x86_64-linux-gnu",
-				"${OF_INCLUDE}",
-				"${OF_LIBS_INCLUDE}",
-				"${workspaceRoot}/../../../libs/kiss/include",
-				"/usr/include/x86_64-linux-gnu/c++/*",
-				"/usr/include/pulse",
-				"/usr/include/cairo",
-				"/usr/include/gstreamer-1.0",
-				"/usr/include/glib-2.0",
-				"${workspaceRoot}",
-				"${workspaceFolder}/src/**",
-				"${PROJECT_ADDON_INCLUDES}",
-				"${PROJECT_EXTRA_INCLUDES}"
-			],
-			"intelliSenseMode": "${default}",
+			"intelliSenseMode": "clang-x64",
+			"configurationProvider": "ms-vscode.makefile-tools",
 			"mergeConfigurations": true,
-			"name": "Linux"
-		},
-		{
+			"includePath": [
+				"${workspaceFolder}/src"
+			],
 			"browse": {
-				"databaseFilename": "",
+				"databaseFilename": "${workspaceRoot}/.vscode/browse.db",
 				"limitSymbolsToIncludedHeaders": true,
 				"path": [
-					"${workspaceFolder}/src/**",
-					"${OF_INCLUDE}",
-					"${OF_LIBS_INCLUDE}",
-					"${PROJECT_ADDON_INCLUDES}",
-					"${PROJECT_EXTRA_INCLUDES}"
+					"${workspaceFolder}/src"
 				]
-			},
-			"cStandard": "c17",
+			}
+		},
+		{
+			"name": "Win32",
 			"compilerPath": "C:/msys64/mingw64/bin/g++.exe",
-			"configurationProvider": "ms-vscode.makefile-tools",
+			"cStandard": "c17",
 			"cppStandard": "c++17",
-			"includePath": [
-				"C:/msys64/mingw64/include/c++/**",
-				"C:/msys64/mingw64/i686-w64-mingw64/include",
-				"${OF_INCLUDE}",
-				"${OF_LIBS_INCLUDE}",
-				"${workspaceFolder}/src/**",
-				"${PROJECT_ADDON_INCLUDES}",
-				"${PROJECT_EXTRA_INCLUDES}"
-			],
 			"intelliSenseMode": "clang-x64",
+			"configurationProvider": "ms-vscode.makefile-tools",
 			"mergeConfigurations": true,
-			"name": "Win32"
+			"includePath": [
+				"${workspaceFolder}/src"
+			],
+			"browse": {
+				"databaseFilename": "${workspaceRoot}/.vscode/browse.db",
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+					"${workspaceFolder}/src"
+				]
+			}
 		}
 	],
-	"env": {
-		"OF_INCLUDE": [
-			"${OF_LIBS_ROOT}/openFrameworks/**"
-		],
-		"OF_LIBS_INCLUDE": [
-			"${OF_LIBS_ROOT}/cairo/include/cairo",
-			"${OF_LIBS_ROOT}/curl/include",
-			"${OF_LIBS_ROOT}/fmod/include",
-			"${OF_LIBS_ROOT}/FreeImage/include",
-			"${OF_LIBS_ROOT}/freetype/include",
-			"${OF_LIBS_ROOT}/glew/include",
-			"${OF_LIBS_ROOT}/glfw/include",
-			"${OF_LIBS_ROOT}/glm/include",
-			"${OF_LIBS_ROOT}/json/include",
-			"${OF_LIBS_ROOT}/pugixml/include",
-			"${OF_LIBS_ROOT}/rtAudio/include",
-			"${OF_LIBS_ROOT}/tess2/include",
-			"${OF_LIBS_ROOT}/uriparser/include",
-			"${OF_LIBS_ROOT}/utf8/include"
-		],
-		"OF_LIBS_ROOT": "${OF_ROOT}/libs",
-		"OF_ROOT": "${workspaceFolder}/../../..",
-		"PROJECT_ADDON_INCLUDES": [],
-		"PROJECT_EXTRA_INCLUDES": []
-	},
 	"version": 4
 }
