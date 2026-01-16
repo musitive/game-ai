@@ -416,3 +416,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+GameAI/.vscode/browse.db
+GameAI/.vscode/browse.db-shm
+GameAI/.vscode/browse.db-wal
