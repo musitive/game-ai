@@ -4,17 +4,25 @@
 #include "ofMain.h"
 #include <glm/gtc/reciprocal.hpp>
 
+#include "Rigidbody2D.hpp"
+
 class Boid {
     private:
         float radius;
         glm::vec2 v1, v2, v3;
 
     public:
-        Boid(float radius, float theta = 5 * glm::pi<float>() / 15) : radius(radius) {
+        Rigidbody2D rb;
+
+        Boid(float radius,
+             float theta = 5 * glm::pi<float>() / 15)
+        : radius(radius) {
             v1 = glm::vec2(radius * glm::cos(theta), radius * glm::sin(theta));
             v2 = glm::vec2(v1.x, radius * glm::sin(theta));
             v3 = glm::vec2(radius * glm::sec<float>(theta), 0);
         }
+
+        void update() {}
 
         void draw() {
             float x = 1024/2, y = 768/2;

@@ -3,9 +3,6 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // This is enabled by default in recent version of openFrameworks
-    ofEnableAntiAliasing();
-
     ofSetCircleResolution(50); // For smoother looking circles + ellipses
 }
 
@@ -19,7 +16,7 @@ void ofApp::draw(){
     ofBackground(255);  // Clear the screen with a black color
     ofSetColor(0);  // Set the drawing color to white
 
-    Boid(25).draw();
+    Boid(20).draw();
 }
 
 //--------------------------------------------------------------
