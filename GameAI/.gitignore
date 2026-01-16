@@ -1,0 +1,79 @@
+# Compiled object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod
+*.cmd
+*.map
+*.exp
+*.dbg
+*.stackdump
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Build folders
+build/
+bin/
+obj/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+Testing/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Backup files
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+
+# OpenFrameworks generated files
+export/
+Debug/
+Release/
+*.user
