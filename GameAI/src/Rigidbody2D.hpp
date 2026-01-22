@@ -9,7 +9,7 @@ struct Rigidbody2D {
     /** The x, y coordinates of the Rigidbody2D */
     ofVec2f position;
 
-    /** The angle of rotation around the z axis, expressed in radians */
+    /** The angle of angular around the z axis, expressed in radians */
     float orientation;
 
     /** The current linear velocity of the Rigidbody 2D */

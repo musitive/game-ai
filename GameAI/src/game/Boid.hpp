@@ -15,24 +15,10 @@ class Boid {
         Rigidbody2D rb;
 
         Boid(float radius,
-             float theta = 5 * glm::pi<float>() / 15)
-        : radius(radius) {
-            v1 = glm::vec2(radius * glm::cos(theta), radius * glm::sin(theta));
-            v2 = glm::vec2(v1.x, radius * glm::sin(theta));
-            v3 = glm::vec2(radius * glm::sec<float>(theta), 0);
-        }
+             float theta = 5 * glm::pi<float>() / 15);
 
-        void update() {}
-
-        void draw() {
-            float x = 1024/2, y = 768/2;
-            ofDrawCircle(x, y, radius);
-
-            ofDrawTriangle(
-                x + v1.x, y + v1.y,
-                x + v2.x, y - v2.y,
-                x + v3.x, y + v3.y);
-        }
+        void update();
+        void draw();
 };
 
 #endif // BOID

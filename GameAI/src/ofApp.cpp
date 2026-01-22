@@ -1,85 +1,105 @@
 #include "ofApp.h"
 #include "game/Boid.hpp"
+#include "KinematicSeek.hpp"
+#include "KinematicArrive.hpp"
 
 //--------------------------------------------------------------
-void ofApp::setup(){
+void ofApp::setup() {
     ofSetCircleResolution(50); // For smoother looking circles + ellipses
+
+    boids.push_back(std::make_shared<Boid>(20));
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
+void ofApp::update() {
+    for (std::shared_ptr<Boid> boid : boids) {
 
+        KinematicArrive arrive = KinematicArrive(
+            Static(boid->rb.position, boid->rb.orientation),
+            Static(ofVec2f(200,200), 0),
+            0.0001f,
+            100,
+            0.25f
+        );
+
+        boid->rb.update(arrive.getSteering(), 10.f);
+        boid->update();
+    }
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void ofApp::draw() {
     ofBackground(255);  // Clear the screen with a black color
     ofSetColor(0);  // Set the drawing color to white
 
-    Boid(20).draw();
+    ofDrawCircle(200, 200, 5);
+
+    for (std::shared_ptr<Boid> boid : boids) {
+        boid->draw();
+    }
 }
 
 //--------------------------------------------------------------
-void ofApp::exit(){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
+void ofApp::exit() {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
+void ofApp::keyPressed(int key) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
+void ofApp::keyReleased(int key) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
+void ofApp::mouseMoved(int x, int y) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseScrolled(int x, int y, float scrollX, float scrollY){
+void ofApp::mousePressed(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
+void ofApp::mouseReleased(int x, int y, int button) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
+void ofApp::mouseScrolled(int x, int y, float scrollX, float scrollY) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
+void ofApp::mouseEntered(int x, int y) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
+void ofApp::mouseExited(int x, int y) {
 
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::windowResized(int w, int h) {
+
+}
+
+//--------------------------------------------------------------
+void ofApp::gotMessage(ofMessage msg) {
+
+}
+
+//--------------------------------------------------------------
+void ofApp::dragEvent(ofDragInfo dragInfo) { 
 
 }

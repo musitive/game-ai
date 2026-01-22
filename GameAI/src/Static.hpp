@@ -10,6 +10,8 @@ struct Static {
     /** The orientation of the static body */
     float orientation;
 
+    Static(ofVec2f position, float orientation) : position(position), orientation(orientation) {}
+
     /// @brief 
     /// @param current 
     /// @param velocity 

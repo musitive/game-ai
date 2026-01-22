@@ -1,8 +1,14 @@
 #pragma once
 
+#include <vector>
+#include <memory>
+
 #include "ofMain.h"
+#include "game/Boid.hpp"
 
 class ofApp : public ofBaseApp{
+	private:
+		std::vector<std::shared_ptr<Boid>> boids;
 
 	public:
 		void setup() override;

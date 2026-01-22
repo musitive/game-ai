@@ -7,7 +7,7 @@ void Rigidbody2D::update(const SteeringOutput& steering, float time) {
     orientation += angular * time; // + steering.angularVelocity * halfTSq;
 
     linear += steering.linear * time;
-    angular += steering.rotation * time;
+    angular += steering.angular * time;
 }
 
     /*

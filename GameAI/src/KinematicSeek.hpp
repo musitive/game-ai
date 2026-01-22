@@ -9,6 +9,10 @@ struct KinematicSeek {
     Static target;
     float maxSpeed;
 
+    KinematicSeek(const Static& character,
+                  const Static& target,
+                  float maxSpeed);
+
     SteeringOutput getSteering();
 };
 
