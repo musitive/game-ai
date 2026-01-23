@@ -4,7 +4,7 @@
 #include "ofMain.h"
 #include <glm/gtc/reciprocal.hpp>
 
-#include "Rigidbody2D.hpp"
+#include "Rigidbody2D.h"
 
 class Boid {
     private:

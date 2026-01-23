@@ -1,4 +1,4 @@
-#include "Rigidbody2D.hpp"
+#include "Rigidbody2D.h"
 
 void Rigidbody2D::update(const SteeringOutput& steering, float time) {
     // float halfTSq = 0.5f * time * time;

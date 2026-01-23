@@ -1,4 +1,4 @@
-#include "Boid.hpp"
+#include "Boid.h"
 
 Boid::Boid(float radius, float theta) : radius(radius) {
     v1 = glm::vec2(radius * glm::cos(theta), radius * glm::sin(theta));

@@ -4,7 +4,7 @@
 #include <memory>
 
 #include "ofMain.h"
-#include "game/Boid.hpp"
+#include "game/Boid.h"
 
 class ofApp : public ofBaseApp{
 	private:

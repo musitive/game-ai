@@ -2,8 +2,8 @@
 #define RIGIDBODY_2D
 
 #include "ofMain.h"
-#include "SteeringOutput.hpp"
-#include "Static.hpp"
+#include "SteeringOutput.h"
+#include "Static.h"
 
 struct Rigidbody2D {
     /** The x, y coordinates of the Rigidbody2D */
