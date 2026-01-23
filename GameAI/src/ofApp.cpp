@@ -8,6 +8,9 @@ void ofApp::setup() {
     ofSetCircleResolution(50); // For smoother looking circles + ellipses
 
     boids.push_back(std::make_shared<Boid>(20));
+    boids[0]->rb.position = ofVec2f(150,900);
+    boids.push_back(std::make_shared<Boid>(20));
+    boids[1]->rb.position = ofVec2f(300,300);
 }
 
 //--------------------------------------------------------------
@@ -16,7 +19,7 @@ void ofApp::update() {
 
         KinematicArrive arrive = KinematicArrive(
             Static(boid->rb.position, boid->rb.orientation),
-            Static(ofVec2f(200,200), 0),
+            Static(ofVec2f(700,700), 0),
             0.0001f,
             100,
             0.25f
@@ -32,7 +35,7 @@ void ofApp::draw() {
     ofBackground(255);  // Clear the screen with a black color
     ofSetColor(0);  // Set the drawing color to white
 
-    ofDrawCircle(200, 200, 5);
+    ofDrawCircle(700, 700, 5);
 
     for (std::shared_ptr<Boid> boid : boids) {
         boid->draw();
