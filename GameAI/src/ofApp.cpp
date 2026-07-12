@@ -1,7 +1,7 @@
 #include "ofApp.h"
-#include "game/Boid.hpp"
-#include "KinematicSeek.hpp"
-#include "KinematicArrive.hpp"
+#include "game/Boid.h"
+#include "movement/basic/seek.h"
+#include "movement/basic/arrive.h"
 
 //--------------------------------------------------------------
 void ofApp::setup() {
